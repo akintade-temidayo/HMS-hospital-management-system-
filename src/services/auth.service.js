@@ -3,7 +3,7 @@
 export const authService = {
   /**
    * Validates hospital code and retrieves branding assets (colors, logo) prior to login/signup.
-   * Endpoint: GET /auth/lookup-hospital/:code[cite: 5, 8]
+   * Endpoint: GET /auth/lookup-hospital/:code
    */
   lookupHospital: async (code) => {
     const response = await api.get(`/auth/lookup-hospital/${code}`);
@@ -12,7 +12,7 @@ export const authService = {
 
   /**
    * Registers a new hospital facility and creates the primary CMD (Chief Medical Director) account.
-   * Endpoint: POST /auth/register-hospital[cite: 1, 7]
+   * Endpoint: POST /auth/register-hospital
    */
   registerHospital: async (payload) => {
     const response = await api.post('/auth/register-hospital', payload);
@@ -21,7 +21,7 @@ export const authService = {
 
   /**
    * Registers a new staff member under a verified hospital code (status defaults to PENDING).
-   * Endpoint: POST /auth/register-staff[cite: 1, 8]
+   * Endpoint: POST /auth/register-staff
    */
   registerStaff: async (payload) => {
     const response = await api.post('/auth/register-staff', payload);
@@ -30,7 +30,7 @@ export const authService = {
 
   /**
    * Authenticates user session and returns user metadata along with access/refresh tokens.
-   * Endpoint: POST /auth/login[cite: 1, 8]
+   * Endpoint: POST /auth/login
    */
   login: async (payload) => {
     const response = await api.post('/auth/login', payload);
@@ -39,7 +39,7 @@ export const authService = {
 
   /**
    * Triggers a single-use six-digit reset code to the user's email.
-   * Endpoint: POST /auth/forgot-password[cite: 1, 8]
+   * Endpoint: POST /auth/forgot-password
    */
   forgotPassword: async (email) => {
     const response = await api.post('/auth/forgot-password', { email });
@@ -48,7 +48,7 @@ export const authService = {
 
   /**
    * Resets the user account password using the email code/token.
-   * Endpoint: POST /auth/reset-password[cite: 1, 9]
+   * Endpoint: POST /auth/reset-password
    */
   resetPassword: async (payload) => {
     const response = await api.post('/auth/reset-password', payload);

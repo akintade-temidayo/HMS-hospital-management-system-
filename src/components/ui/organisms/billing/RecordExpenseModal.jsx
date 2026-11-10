@@ -40,7 +40,7 @@ export const RecordExpenseModal = ({ isOpen, onClose, onSuccess }) => {
             };
 
             await api.post('/billings/expenses', payload);
-            toast.success('Hospital expense logged successfully[cite: 10].');
+            toast.success('Hospital expense logged successfully.');
             setForm({ category: 'Utilities', title: '', amount: '', description: '', expenseDate: new Date().toISOString().split('T')[0] });
             onSuccess();
             onClose();

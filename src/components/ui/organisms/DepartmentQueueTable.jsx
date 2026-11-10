@@ -11,7 +11,7 @@ export const DepartmentQueueTable = ({ queueItems = [], onTransition }) => {
       <div className="bg-white border border-slate-200 rounded-2xl p-12 text-center">
         <Users size={40} className="mx-auto text-slate-300 mb-3" />
         <h4 className="text-sm font-bold text-slate-700">Queue is currently empty</h4>
-        <p className="text-xs text-slate-400 mt-1">Patient encounters will appear here in real-time[cite: 10, 11]</p>
+        <p className="text-xs text-slate-400 mt-1">Patient encounters will appear here in real-time</p>
       </div>
     );
   }

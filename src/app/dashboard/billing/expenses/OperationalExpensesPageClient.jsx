@@ -43,7 +43,7 @@ export default function OperationalExpensesPage() {
                         <span>Hospital Operational Expenses</span>
                     </h1>
                     <p className="text-xs text-slate-500 mt-1">
-                        Track internal facility spend, overhead costs, and operational expenditures[cite: 6, 10].
+                        Track internal facility spend, overhead costs, and operational expenditures.
                     </p>
                 </div>
                 <Button onClick={() => setIsExpenseModalOpen(true)} className="flex items-center gap-2">

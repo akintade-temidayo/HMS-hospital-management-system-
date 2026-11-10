@@ -48,7 +48,7 @@ export default function BillingInvoicesPage() {
                         <span>Patient Invoices & Billing</span>
                     </h1>
                     <p className="text-xs text-slate-500 mt-1">
-                        Manage patient billing records, process incoming revenue payments, and generate official receipts[cite: 6, 11].
+                        Manage patient billing records, process incoming revenue payments, and generate official receipts.
                     </p>
                 </div>
                 <Button onClick={() => setIsCreateOpen(true)} className="flex items-center gap-2">

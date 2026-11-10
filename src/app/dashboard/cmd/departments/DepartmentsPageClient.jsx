@@ -135,7 +135,7 @@ export default function CMDDepartmentsPage() {
         <div>
           <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Department Management</h1>
           <p className="text-xs text-slate-500 mt-1">
-            Monitor core functional units, staff distributions, and lifecycle states[cite: 1, 12].
+            Monitor core functional units, staff distributions, and lifecycle states.
           </p>
         </div>
       </div>

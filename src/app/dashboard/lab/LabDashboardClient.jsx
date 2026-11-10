@@ -48,7 +48,7 @@ export default function MedicalLabPage() {
                         <span>Medical Laboratory & Diagnostics</span>
                     </h1>
                     <p className="text-xs text-slate-500 mt-1">
-                        Search patient folder IDs (`PAT-XXXXX`), log diagnostic test results, and review medical histories[cite: 8].
+                        Search patient folder IDs (`PAT-XXXXX`), log diagnostic test results, and review medical histories.
                     </p>
                 </div>
             </div>

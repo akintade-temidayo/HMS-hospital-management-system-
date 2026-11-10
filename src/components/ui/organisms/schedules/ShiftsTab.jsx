@@ -226,7 +226,7 @@ return (
     <div className="flex items-center justify-between">
         <div>
         <h3 className="text-base font-bold text-slate-900">Weekly Duty Roster & Shifts</h3>
-        <p className="text-xs text-slate-500 mt-1">Manage hospital staff shift rotations and operational assignments[cite: 13].</p>
+        <p className="text-xs text-slate-500 mt-1">Manage hospital staff shift rotations and operational assignments.</p>
         </div>
         <Button onClick={openCreateModal} disabled={departmentScoped && !departmentScope.name}>
         <Plus size={16} />

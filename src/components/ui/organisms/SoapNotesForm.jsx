@@ -47,7 +47,7 @@ export const SoapNotesForm = ({ encounterId, onSuccess }) => {
         </div>
         <div>
           <h3 className="text-base font-bold text-slate-900">Clinical SOAP Notes & ICD-10</h3>
-          <p className="text-xs text-slate-500">Record subjective, objective, assessment, diagnostic codes, and plans[cite: 11]</p>
+          <p className="text-xs text-slate-500">Record subjective, objective, assessment, diagnostic codes, and plans</p>
         </div>
       </div>
 

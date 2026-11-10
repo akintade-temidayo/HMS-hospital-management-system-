@@ -135,7 +135,7 @@ export default function CMDStaffPage() {
         <div>
           <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Staff & Access Control</h1>
           <p className="text-xs text-slate-500 mt-1">
-            Manage hospital personnel, review pending registration requests, and configure RBAC clearances[cite: 12, 16, 21].
+            Manage hospital personnel, review pending registration requests, and configure RBAC clearances.
           </p>
         </div>
       </div>

@@ -121,7 +121,7 @@ const handleSubmit = async (e) => {
             ...commonPayload,
             ...(form.departmentName ? { departmentName: form.departmentName } : {}),
         });
-        toast.success('Time-bound budget successfully created[cite: 14].');
+        toast.success('Time-bound budget successfully created.');
     }
     setIsModalOpen(false);
     setEditingBudget(null);

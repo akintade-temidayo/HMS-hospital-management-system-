@@ -32,7 +32,7 @@ export default function LandingPage() {
           Unified Multi-Tenant Hospital & Clinical Management System
         </h1>
         <p className="text-sm md:text-base text-slate-400 mt-4 max-w-2xl leading-relaxed">
-          Select your portal entry below to access patient records, live OPD queues, pharmacy inventory, and executive billing metrics[cite: 5, 9, 12, 14].
+          Select your portal entry below to access patient records, live OPD queues, pharmacy inventory, and executive billing metrics.
         </p>
 
         {/* 3 Entry Action Cards */}
@@ -52,7 +52,7 @@ export default function LandingPage() {
                 <ArrowRight size={18} className="opacity-0 group-hover:opacity-100 transition-opacity text-sky-400" />
               </h3>
               <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                Setup a brand new hospital tenant, assign custom branding, and activate your Chief Medical Director (CMD) portal[cite: 1, 5, 7].
+                Setup a brand new hospital tenant, assign custom branding, and activate your Chief Medical Director (CMD) portal.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-700/50 text-[11px] font-semibold text-sky-400 flex items-center gap-1.5">
@@ -100,7 +100,7 @@ export default function LandingPage() {
                 <ArrowRight size={18} className="opacity-0 group-hover:opacity-100 transition-opacity text-emerald-400" />
               </h3>
               <p className="text-xs text-slate-400 mt-2 leading-relaxed">
-                Existing user? Connect to your hospital portal, verify credentials, and access active department workspaces[cite: 5, 8].
+                Existing user? Connect to your hospital portal, verify credentials, and access active department workspaces.
               </p>
             </div>
             <div className="mt-6 pt-4 border-t border-slate-700/50 text-[11px] font-semibold text-emerald-400 flex items-center gap-1.5">

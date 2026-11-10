@@ -35,7 +35,7 @@ export const TransitionQueueModal = ({ queueItem, isOpen, onClose, onSuccess }) 
             setSubmitting(true);
             const queueId = queueItem.id || queueItem._id;
             await api.patch(`/encounters/${queueId}/transition-status`, { targetDepartmentId });
-            toast.success('Patient successfully transitioned to the target department queue[cite: 19, 21].');
+            toast.success('Patient successfully transitioned to the target department queue.');
             onSuccess();
             onClose();
         } catch (err) {

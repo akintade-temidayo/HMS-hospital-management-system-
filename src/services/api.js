@@ -64,7 +64,7 @@ api.interceptors.response.use(
     // Handle 403 Forbidden (Suspended account or role restriction)
     if (status === 403) {
       if (typeof window !== 'undefined') {
-        console.warn('Access forbidden or account suspended[cite: 4].');
+        console.warn('Access forbidden or account suspended.');
         // Optional: Trigger custom event or toast notification here
       }
       return Promise.reject(data);
@@ -119,7 +119,7 @@ api.interceptors.response.use(
         processQueue(refreshError, null);
         isRefreshing = false;
 
-        // Clear session and force redirect to login on complete failure[cite: 4]
+        // Clear session and force redirect to login on complete failure
         if (typeof window !== 'undefined') {
           localStorage.removeItem('accessToken');
           localStorage.removeItem('refreshToken');

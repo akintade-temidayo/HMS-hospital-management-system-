@@ -29,7 +29,7 @@ export const RecordPaymentModal = ({ invoice, isOpen, onClose, onSuccess, onRece
             const invoiceId = invoice.id || invoice._id;
             const res = await api.patch(`/billings/invoices/${invoiceId}/pay`, { amount: payAmount });
             
-            toast.success('Payment recorded successfully[cite: 11].');
+            toast.success('Payment recorded successfully.');
             const data = res?.data?.data ?? res?.data ?? {};
             
             // Check if receipt snapshot returned upon full payment

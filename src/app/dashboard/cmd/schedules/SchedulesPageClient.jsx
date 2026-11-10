@@ -15,7 +15,7 @@ return (
         <div>
         <h1 className="text-2xl font-bold text-slate-900 tracking-tight">Schedules & Task Management</h1>
         <p className="text-xs text-slate-500 mt-1">
-            Organize staff duty rosters, shift schedules, and operational task assignments[cite: 13, 14].
+            Organize staff duty rosters, shift schedules, and operational task assignments.
         </p>
         </div>
     </div>

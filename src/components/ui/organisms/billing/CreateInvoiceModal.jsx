@@ -89,7 +89,7 @@ export const CreateInvoiceModal = ({ isOpen, onClose, onSuccess }) => {
             };
 
             await api.post('/billings/invoices', payload);
-            toast.success('Patient invoice successfully created[cite: 9].');
+            toast.success('Patient invoice successfully created.');
             setItems([{ description: '', quantity: 1, unitPrice: '' }]);
             clearPatient();
             setDueDate('');

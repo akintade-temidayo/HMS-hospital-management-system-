@@ -78,7 +78,7 @@ export const PrescriptionForm = ({ encounterId, onSuccess }) => {
         </div>
         <div>
           <h3 className="text-base font-bold text-slate-900">Issue Medication Prescription</h3>
-          <p className="text-xs text-slate-500">Attach prescriptions and dosages to active encounter[cite: 13]</p>
+          <p className="text-xs text-slate-500">Attach prescriptions and dosages to active encounter</p>
         </div>
       </div>
 
