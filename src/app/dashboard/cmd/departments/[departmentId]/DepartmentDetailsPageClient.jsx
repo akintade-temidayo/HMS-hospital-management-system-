@@ -1,8 +1,7 @@
 'use client';
 
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { use, useEffect, useMemo, useState } from 'react';
 import Link from 'next/link';
-import { useParams } from 'next/navigation';
 import { api } from '@/services/api';
 import { ArrowLeft, Building2, Users, Activity } from 'lucide-react';
 import { toast } from 'sonner';
@@ -15,8 +14,8 @@ const asList = (payload, keys) => {
 };
 const labelFor = (key) => key.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[_-]+/g, ' ');
 
-export default function DepartmentDetailsPageClient() {
-  const { departmentId } = useParams();
+export default function DepartmentDetailsPageClient({ params }) {
+  const { departmentId } = use(params);
   const [department, setDepartment] = useState(null);
   const [staff, setStaff] = useState([]);
   const [analytics, setAnalytics] = useState(null);

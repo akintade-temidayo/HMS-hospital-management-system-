@@ -1,7 +1,7 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-import { useParams, useRouter } from 'next/navigation';
+import React, { use, useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { api } from '@/services/api';
 import { Badge } from '@/components/ui/atoms/Badge';
 import { Button } from '@/components/ui/atoms/Button';
@@ -9,10 +9,9 @@ import { ConfirmModal } from '@/components/ui/molecules/ConfirmModal';
 import { ArrowLeft, Power, RefreshCw, UserPlus, Mail, Phone, Building } from 'lucide-react';
 import { toast } from 'sonner';
 
-export default function StaffDetailPage() {
-const params = useParams();
+export default function StaffDetailPage({ params }) {
+const { userId } = use(params);
 const router = useRouter();
-const userId = params?.userId;
 
 const [staff, setStaff] = useState(null);
 const [loading, setLoading] = useState(true);
